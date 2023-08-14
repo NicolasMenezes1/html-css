@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            margin: 0px;
+        }
+
+        header{ /* "Cabeçalho" */
+            background-color: rgb(255, 250, 230);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(102, 102, 102);
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            /* deslocamento horizontal, deslocamento vertical, blur,*/
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{ /* "Conteudo" */
+            background-color: rgba(255, 250, 230, 0.822);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px; 
+            box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.329);          
+        }
+
+        section > aside{
+            background-color: rgba(43, 43, 43, 0.582);
+            color: white;
+        }
+
+        article{
+            background-color: rgba(236, 231, 213, 0.582);
+             
+        }
+
+        article>aside{
+            background-color: rgba(43, 43, 43, 0.582);
+            color: white;
+            
+        }
+
+        footer{
+            background-color: white;
+            padding: 3px;
+            margin: 10px;           
+            text-align: center; 
+            font-weight: bold;
+
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 300px;
+            width:  300px;
+            background-color: rgb(192, 192, 192);
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site exemplo</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes, Politicas e Intreterimento</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quaerat quos corporis esse eum eligendi, officiis, nihil aliquid nam dolores eius aliquam corrupti, repudiandae ipsam exercitationem ducimus autem. Voluptatibus, minima! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam laudantium minus nulla unde suscipit recusandae eaque vero. Molestiae voluptatum recusandae nesciunt explicabo nobis obcaecati aperiam cupiditate perferendis soluta ab. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum vitae deleniti quasi quae quod tempore iusto quisquam nisi animi odit, nulla repellat? Rerum aut similique ab expedita placeat aspernatur aliquam?</p>
+            <aside>
+                <p>Artigo escrito por Cecília França</p>
+            </aside>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi magni voluptatibus quasi, neque nemo ducimus porro commodi. Necessitatibus laudantium tenetur possimus dolor quod iusto reiciendis velit vitae enim, incidunt error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, aut? Delectus illo quibusdam consequuntur similique deleniti doloribus ducimus ea voluptatum culpa, cumque sit, aspernatur dolorum numquam! At nemo nam similique.</p>
+                <aside>
+                    <p>Artigo escrito por Marcela Menezes</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Nícolas Menezes - Teste</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
