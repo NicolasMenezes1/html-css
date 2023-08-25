@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do Usuário" autocomplete="on" autocomplete="username">
+        </p>
+
+        <!--
+            as seguintes tags significam 
+            required - é obrigatório preencher os campos 
+            
+            minlength="5" - é obrigatório ter no mínimo 5 letras 
+            
+            maxlength="15" - é obrigatório ter no máximo 15 letras 
+            
+            size="10" - aumenta e diminui o tamanho da caixa,quantas letras a caixa vai mostrar por vez - 10
+            placeholder="nome do Usuário" - Dica do que o usuário tem que colocar, dentro da caixa
+            
+            autocomplete - com o autocomplete ligado na linha 13, para identificar o que é cada campo, é necessário colocar um autocomplete em todos os campos e dizer o que ele é 
+
+        -->
+
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="3" >
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar" autocomplete="current-password">
+    </form>
+
+</body>
+</html>

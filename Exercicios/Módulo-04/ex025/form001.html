@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off"> <!--autocomplete="off" é para desligar as sugestões de textos - não tem no material, video 18-->
+        <P><label for="inome">Nome: </label>
+            <input type="text" name="Nome" id="inome"></P>
+        <p><label for="isobrenome">Sobrenome </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <!--SEMPRE USAR O LABEL PARA FAZER A RELAÇÃO DO OBJETO DE FORMULARIO COM A ETIQUETA DELE -->
+
+    <h2>Segunda etapa do formulário</h2>
+    <form action="cadastro.php" method="get" autocomplete="off"> <!--method="get" - deixa os dados da URL 
+        Não usar o get para enviar mais que 3.000 bytes (3.000 letras), 
+        Não usar dados sensiveis, (senhas, cartões)
+        Não usar para envio de imagens e arquivos 
+
+        method="post" - tira os dados da URL
+        Dados Sensiveis (Ideal trabalhar com https para proteger dados, aprender no futuro)
+        Dados não apareçam na URL
+        Envios de imagens e arquivos
+        Envios acima de 3.000 bytes-->
+        <P><label for="inome">Nome: </label>
+            <input type="text" name="Nome" id="inome"></P>
+        <p><label for="isobrenome">Sobrenome </label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+     
+</body>
+</html>
