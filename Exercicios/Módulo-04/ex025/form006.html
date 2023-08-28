@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <P>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!--nesse caso, o value é usado para escolher a cor que vai começar aparecendo-->
+        </P>
+
+        <p>
+            <label for="inivel">Nível de satifação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="5"> <!--min e max são o tamnho di range, e o value é onde o nível vai começar aparecendo-->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <!-- Anotações gerais
+            
+            cada navegado vai ter definições padrões diferente, importante testar formularios em todos os navegadores
+
+            Quando utilizar o metodo de envio de arquivos - NÃO UTILIZAR O METODO GET - tem que utilizar o metodo post 
+        -->
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+</html>
